@@ -26,8 +26,10 @@ def process_all(source, target):
     for infile in sorted(scan_directory(source)):
         name = os.path.basename(infile).replace('.gz', '')
         outdir = os.path.join(target, name)
-        if not os.path.exists(outdir):
-            os.makedirs(outdir)
+        if os.path.exists(outdir):
+            print('INFO:  Path "{}" already exists, skipping'.format(outdir))
+            continue
+        os.makedirs(outdir)
         outfile = os.path.join(outdir, 'mbox'.format(name))
         try:
             print('INFO:  Processing file "{infile}"'.format(infile=infile))
