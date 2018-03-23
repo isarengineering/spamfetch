@@ -23,7 +23,7 @@ def scan_directory(path):
         yield filename
 
 def process_all(source, target):
-    for infile in scan_directory(source):
+    for infile in sorted(scan_directory(source)):
         name = os.path.basename(infile).replace('.gz', '')
         outdir = os.path.join(target, name)
         if not os.path.exists(outdir):
