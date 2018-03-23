@@ -2,7 +2,11 @@
 """
 Fetch spam email message archive from http://artinvoice.hu/spams/
 
-Synopsis:
+Install::
+
+    pip install requests
+
+Synopsis::
 
     python spamfetch_artinvoice.py /var/lib/spamarchive/artinvoice
 """
