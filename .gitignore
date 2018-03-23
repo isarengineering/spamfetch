@@ -1,1 +1,5 @@
+*.pyc
+.venv*
+/doc/_build
 /tmp*
+/dist
