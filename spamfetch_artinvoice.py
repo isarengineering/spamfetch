@@ -19,6 +19,7 @@ url_tpl = 'http://artinvoice.hu/spams/spam--{date}.gz'
 
 def daterange(date1, date2):
     # https://www.w3resource.com/python-exercises/date-time-exercise/python-date-time-exercise-50.php
+    # TODO: Also support reversing date1 and date2 by counting **down**.
     for n in range(int((date2 - date1).days) + 1):
         yield date1 + datetime.timedelta(n)
 
@@ -46,7 +47,7 @@ def fetch_all(target):
         try:
             fetch(url, path)
         except Exception as ex:
-            print('ERROR: Failed downloading {url}'.format(url=url))
+            print('ERROR: Failed downloading {url}. {ex}'.format(url=url, ex=ex))
 
 def run(target):
     fetch_all(target)

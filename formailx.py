@@ -33,7 +33,7 @@ def process_all(source, target):
             print('INFO:  Processing file "{infile}"'.format(infile=infile))
             process_item(infile, outfile)
         except Exception as ex:
-            print('ERROR: Processing file "{infile}" failed'.format(infile=infile))
+            print('ERROR: Processing file "{infile}" failed. {ex}'.format(infile=infile,ex=ex))
 
 def process_item(infile, outfile):
         command = u"cat '{infile}' | gunzip | formail -ds sh -c 'cat > {outfile}.$FILENO'".format(infile=infile, outfile=outfile)
