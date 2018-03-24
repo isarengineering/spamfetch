@@ -11,7 +11,7 @@ These tools will help you preseeding a Rspamd_ instance with qualified email spa
 Suitable sources for spam messages are:
 
 - http://artinvoice.hu/spams/
-- http://untroubled.org/spam/ (please use the untroubled-spam-fetcher)
+- http://untroubled.org/spam/ (please use the `untroubled-spam-fetcher`_ program)
 
 .. _Rspamd: https://rspamd.com/
 .. _untroubled-spam-fetcher: https://pypi.python.org/pypi/untroubled-spam-fetcher
