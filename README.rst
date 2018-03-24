@@ -1,6 +1,6 @@
-##############################################################
-spamfetch - a utility for fetching messages from spam archives
-##############################################################
+#############################################
+spamfetch - fetch messages from spam archives
+#############################################
 
 
 *****
@@ -9,6 +9,7 @@ About
 These tools will help you preseeding a Rspamd_ instance with qualified email spam messages.
 
 Suitable sources for spam messages are:
+
 - http://artinvoice.hu/spams/
 - http://untroubled.org/spam/ (please use the untroubled-spam-fetcher)
 
